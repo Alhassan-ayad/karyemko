@@ -870,8 +870,8 @@ body {
     }
     
     .product-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
         max-width: 100%;
     }
     
@@ -921,6 +921,11 @@ body {
     
     .product-title {
         font-size: 32px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
     
     .product-image {
