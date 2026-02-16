@@ -977,9 +977,10 @@ body {
    =================================== */
 
 .footer-section {
-    background: linear-gradient(to bottom, #0D0937 0%, #060420 100%);
-    padding: 80px 40px 40px;
+    background: #080523;
+    padding: 80px 40px 0;
     position: relative;
+    overflow: visible;
 }
 
 .footer-container {
@@ -1035,7 +1036,13 @@ body {
     grid-template-columns: auto 1fr;
     gap: 50px;
     align-items: start;
-    padding-top: 40px;
+    padding: 40px;
+    margin-top: 60px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding-left: calc(50vw - 50% + 40px);
+    padding-right: calc(50vw - 50% + 40px);
+    background: #040219;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -1130,7 +1137,7 @@ body {
 
 @media (max-width: 992px) {
     .footer-section {
-        padding: 60px 30px 30px;
+        padding: 60px 30px 0;
     }
     
     .footer-title {
@@ -1147,6 +1154,8 @@ body {
     .footer-bottom {
         grid-template-columns: 1fr;
         gap: 30px;
+        padding-left: calc(50vw - 50% + 30px);
+        padding-right: calc(50vw - 50% + 30px);
     }
     
     .footer-logo {
@@ -1166,7 +1175,7 @@ body {
 
 @media (max-width: 768px) {
     .footer-section {
-        padding: 50px 25px 25px;
+        padding: 50px 25px 0;
     }
     
     .footer-title {
@@ -1196,6 +1205,11 @@ body {
         font-size: 28px;
     }
     
+    .footer-bottom {
+        padding-left: calc(50vw - 50% + 25px);
+        padding-right: calc(50vw - 50% + 25px);
+    }
+    
     .footer-legal p {
         font-size: 12px;
     }
@@ -1211,7 +1225,7 @@ body {
 
 @media (max-width: 480px) {
     .footer-section {
-        padding: 40px 20px 20px;
+        padding: 40px 20px 0;
     }
     
     .footer-title {
@@ -1229,6 +1243,11 @@ body {
     
     .footer-company-name {
         font-size: 24px;
+    }
+    
+    .footer-bottom {
+        padding-left: calc(50vw - 50% + 20px);
+        padding-right: calc(50vw - 50% + 20px);
     }
     
     .footer-legal p {
